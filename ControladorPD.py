@@ -48,20 +48,20 @@ def Questao(questao,zero,k,s):
     Z1 = clt.tf([1,zero],[1])
     SISTEMA = G * Z1
 
-    print("Questão "+ str(questao) + ":")
+    print("\nQuestão "+ str(questao) + ":")
     print("Sistema: " + str(SISTEMA))
-    print("Questão " + str(questao) + ".1: Figura " + str(figure))
+    print("\nQuestão " + str(questao) + ".1: Figura " + str(figure))
     local_das_raizes(SISTEMA,questao)
     print("Para um ξ de 0.65 temos:  k = " + str(k) + " e s = " + str(s))
-    print("Questão " + str(questao) + ".2: ")
+    print("\nQuestão " + str(questao) + ".2: ")
     margem_de_ganho_e_fase(SISTEMA*k)
-    print("Questão " + str(questao) + ".3: Gráfico " + str(figure))
+    print("\nQuestão " + str(questao) + ".3: Gráfico " + str(figure))
     resposta_ao_degrau(SISTEMA*k,questao)
 
 
 
 # Questão 1:
-print("Questão 1: Figura " + str(figure))
+print("\nQuestão 1: Figura " + str(figure))
 local_das_raizes(G,1)
 
 print("Para um ξ de 0.65 temos:  k = 39.84 e s = -1.861 + 2.175j")
@@ -69,11 +69,11 @@ print("Para um ξ de 0.65 temos:  k = 39.84 e s = -1.861 + 2.175j")
 k = 39.84
 
 # Questão 2:
-print("Questão 2:")
+print("\nQuestão 2:")
 margem_de_ganho_e_fase(G*k)
 
 # Questão 3:
-print("Questão 3: Gráfico " + str(figure))
+print("\nQuestão 3: Gráfico " + str(figure))
 resposta_ao_degrau(G*k,3)
 
 # Questão 4:
@@ -84,6 +84,7 @@ Questao(5, 15, 3.381, -2.052 +2.399j)
 Questao(6, 30, 1.485, -1.944 + 2.273j)
 # Questão 7:
 Questao(7, 40, 1.082, -1.921 + 2.247j)
+
 
 
 plt.show()
